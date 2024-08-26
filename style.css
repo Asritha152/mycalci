@@ -1,0 +1,64 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* see justify content centre and align items centre on container not on flex item */
+}
+.container{
+    width: 400px;
+    padding:.5rem 0 ;
+    background-color: black;
+    margin: 1rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow:  2px 3px 4px rgb(218, 203, 203);
+   
+}
+.inputbar,#search{
+    width: 100%;
+    height: 50%;
+    padding: 1rem;
+    font-size: 3.5rem;
+    color: white;
+    background:none;
+    border: none;
+}
+/* #search:active{
+    border: none;
+} */
+.keypad-container{
+    padding: .5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: .5rem;
+}
+button{
+    color: white;
+    padding: 1rem;
+    
+    font-size: 1.5rem;
+    background-color: rgb(30, 29, 29);
+    filter:blur(.5px);
+    box-shadow: -2px -3px 4px gray ;
+    border: none;
+    
+   
+}
+button:hover{
+    background-color: rgb(74, 72, 72);
+   
+  
+}
+.eq-btn{
+    grid-column:3/5 ;
+}
